@@ -1,0 +1,20 @@
+{
+  "name": "learn-cicd",
+  "version": "1.0.0",
+  "description": "A project to learn CI/CD with GitHub Actions",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Running tests...\" && exit 0",
+    "build": "echo \"Building project...\" && exit 0",
+    "start": "echo \"Starting application...\" && exit 0"
+  },
+  "keywords": [
+    "cicd",
+    "github-actions",
+    "nodejs"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {},
+  "dependencies": {}
+} 

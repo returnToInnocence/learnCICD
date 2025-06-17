@@ -17,6 +17,7 @@ jobs:
       - uses: actions/checkout@v3  # 使用GitHub官方的checkout动作来拉取代码到运行环境
         with:  # 为checkout动作提供参数
           node-version: 20  # 指定Node.js版本为20（注意：这个参数在checkout动作中是无效的）
+      - run: npm install
       - run: npm ci  # 执行npm ci命令，用于快速、可靠地安装依赖包（基于package-lock.json）
       - run: npm run test  # 执行npm run test命令，运行项目中定义的测试脚本
       - run: npm run build  # 执行npm run build命令，构建项目
