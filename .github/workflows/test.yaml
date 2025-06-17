@@ -1,11 +1,11 @@
 # 这是一个注释，用来简单描述这个工作流的用途
-name: Test project  # 定义工作流的名称，这个名称会在GitHub Actions页面中显示
+name: Test Project  # 定义工作流的名称，这个名称会在GitHub Actions页面中显示
 
 # 定义触发器，指定什么情况下会执行这个工作流
 on:
-  push:  # 当有代码推送时触发
-    branches:  # 指定只有推送到特定分支时才触发
-      - main  # 只有推送到main分支时才会执行这个工作流
+  pull_request:  # 当有Pull Request（拉取请求）时触发
+    branches:  # 指定只有针对特定分支的PR时才触发
+      - main  # 只有针对main分支的Pull Request时才会执行这个工作流
 
 # 定义工作流中的任务（jobs）
 jobs:
